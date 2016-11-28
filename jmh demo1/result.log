@@ -1,0 +1,106 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Benchmark JMH 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ java-benchmark-jmh ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ java-benchmark-jmh ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/chetan/Downloads/jmh demo/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ java-benchmark-jmh ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/chetan/Downloads/jmh demo/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ java-benchmark-jmh ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/chetan/Downloads/jmh demo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ java-benchmark-jmh ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ java-benchmark-jmh ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ java-benchmark-jmh ---
+[INFO] Building jar: /home/chetan/Downloads/jmh demo/target/java-benchmark-jmh-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ java-benchmark-jmh ---
+[INFO] Installing /home/chetan/Downloads/jmh demo/target/java-benchmark-jmh-0.0.1-SNAPSHOT.jar to /home/chetan/.m2/repository/com/javapapers/java/benchmark/jmh/java-benchmark-jmh/0.0.1-SNAPSHOT/java-benchmark-jmh-0.0.1-SNAPSHOT.jar
+[INFO] Installing /home/chetan/Downloads/jmh demo/pom.xml to /home/chetan/.m2/repository/com/javapapers/java/benchmark/jmh/java-benchmark-jmh/0.0.1-SNAPSHOT/java-benchmark-jmh-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] --- exec-maven-plugin:1.4.0:exec (default-cli) @ java-benchmark-jmh ---
+# JMH 1.10.3 (released 500 days ago, please consider updating!)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.tutorial.jmh.JMHHelloWorld.helloWorld
+
+# Run progress: 0.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 2541079354.334 ops/s
+# Warmup Iteration   2: 2540368833.398 ops/s
+# Warmup Iteration   3: 2540432982.026 ops/s
+# Warmup Iteration   4: 2421730640.801 ops/s
+# Warmup Iteration   5: 2365429690.027 ops/s
+# Warmup Iteration   6: 2421697299.755 ops/s
+# Warmup Iteration   7: 2397669397.467 ops/s
+# Warmup Iteration   8: 2389486573.682 ops/s
+# Warmup Iteration   9: 2393848538.259 ops/s
+# Warmup Iteration  10: 2423164808.877 ops/s
+# Warmup Iteration  11: 2524794710.379 ops/s
+# Warmup Iteration  12: 2528927444.700 ops/s
+# Warmup Iteration  13: 2525105103.021 ops/s
+# Warmup Iteration  14: 2501766053.887 ops/s
+# Warmup Iteration  15: 2444695651.428 ops/s
+# Warmup Iteration  16: 2393812082.386 ops/s
+# Warmup Iteration  17: 2244573123.539 ops/s
+# Warmup Iteration  18: 2301659287.410 ops/s
+# Warmup Iteration  19: 2219971537.381 ops/s
+# Warmup Iteration  20: 2406626831.898 ops/s
+Iteration   1: 2279639715.321 ops/s
+Iteration   2: 2238330628.007 ops/s
+Iteration   3: 2347277297.880 ops/s
+Iteration   4: 2398630584.908 ops/s
+Iteration   5: 2504630322.354 ops/s
+Iteration   6: 2501795271.228 ops/s
+Iteration   7: 2321022831.138 ops/s
+Iteration   8: 2353346095.637 ops/s
+Iteration   9: 2432029501.061 ops/s
+Iteration  10: 2360741704.141 ops/s
+Iteration  11: 2368918569.586 ops/s
+Iteration  12: 2262134980.637 ops/s
+Iteration  13: 2014331284.360 ops/s
+Iteration  14: 2349123878.930 ops/s
+Iteration  15: 2426832381.847 ops/s
+Iteration  16: 2462456863.984 ops/s
+Iteration  17: 2267885569.022 ops/s
+Iteration  18: 1833954839.160 ops/s
+Iteration  19: 1872955658.220 ops/s
+Iteration  20: 2233222181.605 ops/s
+
+
+Result "helloWorld":
+  2291463007.951 ±(99.9%) 161776999.702 ops/s [Average]
+  (min, avg, max) = (1833954839.160, 2291463007.951, 2504630322.354), stdev = 186302633.442
+  CI (99.9%): [2129686008.249, 2453240007.654] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:40
+
+Benchmark                  Mode  Cnt           Score           Error  Units
+JMHHelloWorld.helloWorld  thrpt   20  2291463007.951 ± 161776999.702  ops/s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43.906 s
+[INFO] Finished at: 2016-11-28T07:06:21+05:30
+[INFO] Final Memory: 16M/162M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+http://javapapers.com/java/java-micro-benchmark-with-jmh/
+
+ mvn clean install exec:exec > result.log.
